@@ -1,0 +1,30 @@
+* slc-in-shell
+yar to automate manual questsss... for the slc result
+might not work in future...
+
+* Motivation:
+	Bored of too much repetative manual task to get the slc ledger.
+
+* How it works ?
+- the script eats the `slc.csv` file formatted like this:
+
+  Name of Student,symbolNoWithAplhabet,date-of-birth
+  sample eg:
+
+     Bishal Humagain,0275507k,2055-02-11
+
+     Saurav BHuju,0275511o,2055-03-03
+
+     Jiwan Sapkota,0275513q,2056-07-25
+
+
+- Enjoy the Makefile
+ `make`
+
+- the output generated at result directory...on fly
+	& need future revisions
+
+* Behind the scene.
+	the scirpt use `curl` with data params "symbol"&"dob" form the `slc.csv` file in a loop and filter the result accordingly in result folder.
+  So its higly depends on slc.ntc.net.np and the formatings... so it might broke in future...
+  Works for me now.. :D
